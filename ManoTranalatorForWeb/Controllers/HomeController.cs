@@ -5,22 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ManoTranalatorForWeb.Models;
+using ManoTranslatorCLI;
 
 namespace ManoTranalatorForWeb.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        //public IActionResult About()2
-        //{
-        //    return View();
-        //}
-
-        public IActionResult About(ManoText manoText)
+        public IActionResult Index(ManoText manoText)
         {
             return View(manoText);
         }
@@ -32,34 +23,40 @@ namespace ManoTranalatorForWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Convert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
         {
+            var inputText = string.Empty;
+            var outputText = string.Empty;
             if (id != manoText.Id)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                var num = 0;
-                var tmp = num + 5;
+                inputText = manoText.InputText;
+                var translator = new Translator();
+                outputText = translator.Encode(manoText.InputText ?? string.Empty);
             }
 
-            return RedirectToAction(nameof(About), new ManoText { Id = 5, InputText = "Hello!", OutputText = "World!" });
+            return RedirectToAction(nameof(Index), new ManoText { Id = 5, InputText = inputText, OutputText = outputText });
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Deconvert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
         {
+            var inputText = string.Empty;
+            var outputText = string.Empty;
             if (id != manoText.Id)
             {
                 return NotFound();
             }
             if (ModelState.IsValid)
             {
-                var num = 0;
-                var tmp = num + 5;
+                inputText = manoText.InputText;
+                var translator = new Translator();
+                outputText = translator.Decode(manoText.InputText ?? string.Empty);
             }
 
-            return RedirectToAction(nameof(About), new ManoText { Id = 5, InputText = "Hello!", OutputText = "World!" });
+            return RedirectToAction(nameof(Index), new ManoText { Id = 5, InputText = inputText, OutputText = outputText });
         }
 
         public IActionResult Contact()
