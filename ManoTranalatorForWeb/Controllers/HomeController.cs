@@ -21,7 +21,7 @@ namespace ManoTranalatorForWeb.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Convert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
+        public IActionResult Convert(string id, [Bind("Id,InputText,OutputText")] ManoText manoText)
         {
             var inputText = string.Empty;
             var outputText = string.Empty;
@@ -36,12 +36,12 @@ namespace ManoTranalatorForWeb.Controllers
                 outputText = translator.Encode(manoText.InputText ?? string.Empty);
             }
 
-            return RedirectToAction(nameof(Index), new ManoText { Id = 5, InputText = inputText, OutputText = outputText });
+            return RedirectToAction(nameof(Index), new ManoText { Id = Guid.NewGuid().ToString(), InputText = inputText, OutputText = outputText });
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Deconvert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
+        public IActionResult Deconvert(string id, [Bind("Id,InputText,OutputText")] ManoText manoText)
         {
             var inputText = string.Empty;
             var outputText = string.Empty;
@@ -56,14 +56,7 @@ namespace ManoTranalatorForWeb.Controllers
                 outputText = translator.Decode(manoText.InputText ?? string.Empty);
             }
 
-            return RedirectToAction(nameof(Index), new ManoText { Id = 5, InputText = inputText, OutputText = outputText });
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            return RedirectToAction(nameof(Index), new ManoText { Id = Guid.NewGuid().ToString(), InputText = inputText, OutputText = outputText });
         }
 
         public IActionResult Error()

@@ -7,8 +7,13 @@ namespace ManoTranalatorForWeb.Models
 {
     public class ManoText
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string InputText { get; set; }
         public string OutputText { get; set; }
+
+        public ManoText()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
     }
 }
