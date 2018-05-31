@@ -15,11 +15,51 @@ namespace ManoTranalatorForWeb.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
+        //public IActionResult About()2
+        //{
+        //    return View();
+        //}
 
-            return View();
+        public IActionResult About(ManoText manoText)
+        {
+            return View(manoText);
+        }
+
+        // POST: TextHolders/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Convert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
+        {
+            if (id != manoText.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                var num = 0;
+                var tmp = num + 5;
+            }
+
+            return RedirectToAction(nameof(About), new ManoText { Id = 5, InputText = "Hello!", OutputText = "World!" });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Deconvert(int id, [Bind("Id,InputText,OutputText")] ManoText manoText)
+        {
+            if (id != manoText.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                var num = 0;
+                var tmp = num + 5;
+            }
+
+            return RedirectToAction(nameof(About), new ManoText { Id = 5, InputText = "Hello!", OutputText = "World!" });
         }
 
         public IActionResult Contact()
