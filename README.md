@@ -1,0 +1,2 @@
+# ManoTranalatorForWeb
+ManoTranalatorのWeb版
