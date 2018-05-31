@@ -1,7 +1,26 @@
-﻿@{
-    ViewData["Title"] = "About";
+﻿@model ManoTranalatorForWeb.Models.ManoText
+
+@{
+    ViewData["Title"] = "ManoTranalatorForWeb";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<div class="row">
+    <div class="col-md-12">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="InputText" class="control-label">入力</label>
+            <textarea asp-for="InputText" class="form-control"></textarea>
+            <span asp-validation-for="InputText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-action="Convert" type="submit" value="ほわっ  むんっ" class="btn btn-default" />
+            <input asp-action="Deconvert" type="submit" value="にほんご" class="btn btn-default" />
+        </div>
+        <div class="form-group">
+            <label asp-for="OutputText" class="control-label">出力</label>
+            <textarea asp-for="OutputText" class="form-control"></textarea>
+            <span asp-validation-for="OutputText" class="text-danger"></span>
+        </div>
+    </div>
+</div>
