@@ -1,6 +1,6 @@
 # ManoTranslatorForWeb
 
-[![Build status](https://ci.appveyor.com/api/projects/status/rk0a4jiv62x1lcqr/branch/master?svg=true)](https://ci.appveyor.com/project/poketorena/ManoTranslatorForWeb/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/fgioqs3f9c122ury/branch/master?svg=true)](https://ci.appveyor.com/project/poketorena/manotranslatorforweb/branch/master)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ManoTranslatorのWeb版
