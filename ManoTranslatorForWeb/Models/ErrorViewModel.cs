@@ -1,6 +1,6 @@
 using System;
 
-namespace ManoTranalatorForWeb.Models
+namespace ManoTranslatorForWeb.Models
 {
     public class ErrorViewModel
     {

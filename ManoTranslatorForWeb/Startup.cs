@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ManoTranalatorForWeb
+namespace ManoTranslatorForWeb
 {
     public class Startup
     {

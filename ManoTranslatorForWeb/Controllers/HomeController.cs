@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using ManoTranalatorForWeb.Models;
+using ManoTranslatorForWeb.Models;
 using ManoTranslatorCLI;
 
-namespace ManoTranalatorForWeb.Controllers
+namespace ManoTranslatorForWeb.Controllers
 {
     public class HomeController : Controller
     {
