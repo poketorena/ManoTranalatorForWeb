@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using ManoTranslatorCLI;
 using ManoTranslatorForWeb.Models;
-using ManoTranslatorCLI;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Diagnostics;
 
 namespace ManoTranslatorForWeb.Controllers
 {

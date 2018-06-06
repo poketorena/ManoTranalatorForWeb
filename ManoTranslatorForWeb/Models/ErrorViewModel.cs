@@ -1,5 +1,3 @@
-using System;
-
 namespace ManoTranslatorForWeb.Models
 {
     public class ErrorViewModel
