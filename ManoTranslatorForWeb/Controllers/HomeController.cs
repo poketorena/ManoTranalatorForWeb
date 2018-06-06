@@ -16,9 +16,6 @@ namespace ManoTranslatorForWeb.Controllers
             return View(manoText);
         }
 
-        // POST: TextHolders/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Convert(string id, [Bind("Id,InputText,OutputText")] ManoText manoText)
