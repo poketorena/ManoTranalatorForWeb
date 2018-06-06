@@ -5,7 +5,7 @@
 
 ManoTranslatorのWeb版
 
-![ManoTranslatorForweb](./Screenshot/ManoTranslatorForweb.png)
+![](./Screenshot/ManoTranslatorForWeb.png)
 
 
 ## Development Environment
