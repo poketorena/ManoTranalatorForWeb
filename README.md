@@ -5,6 +5,9 @@
 
 ManoTranslatorのWeb版
 
+![ManoTranslatorForweb](./Screenshot/ManoTranslatorForweb.png)
+
+
 ## Development Environment
 * Windows 10 Home
 * Visual Studio 2017 Enterprise
