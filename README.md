@@ -19,6 +19,3 @@ ManoTranslatorのWeb版 https://manotranslatorforweb.azurewebsites.net
 ## Author
 
 [@science507](https://twitter.com/science507)
-
-## License
-[MIT License](LICENSE)
