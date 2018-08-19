@@ -15,6 +15,7 @@ ManoTranslatorのWeb版 https://manotranslatorforweb.azurewebsites.net
 ## Dependency
 * .NET Core 2.0
 * ASP.NET Core MVC
+* [ManoTranslator](https://github.com/para7/ManoTranslator)
 
 ## Author
 
