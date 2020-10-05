@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManoTranslatorForWeb", "ManoTranslatorForWeb\ManoTranslatorForWeb.csproj", "{DA92FCC7-1DE8-41C9-9B2C-758C7B998338}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManoTranslatorForWeb", "ManoTranslatorForWeb\ManoTranslatorForWeb.csproj", "{EF1E5349-627E-47E2-9178-722305AE3349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA92FCC7-1DE8-41C9-9B2C-758C7B998338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA92FCC7-1DE8-41C9-9B2C-758C7B998338}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA92FCC7-1DE8-41C9-9B2C-758C7B998338}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA92FCC7-1DE8-41C9-9B2C-758C7B998338}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1E5349-627E-47E2-9178-722305AE3349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1E5349-627E-47E2-9178-722305AE3349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1E5349-627E-47E2-9178-722305AE3349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1E5349-627E-47E2-9178-722305AE3349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {156FC1C6-7879-4677-875C-9887EBFF8F71}
+		SolutionGuid = {896C5D4F-3C9D-40BC-B040-E12A926F81BE}
 	EndGlobalSection
 EndGlobal
