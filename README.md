@@ -10,10 +10,10 @@ ManoTranslatorのWeb版 https://manotranslatorforweb.azurewebsites.net
 
 ## Development Environment
 * Windows 10 Home
-* Visual Studio 2017 Enterprise
+* Visual Studio 2019 Community
 
 ## Dependency
-* .NET Core 2.0
+* .NET Core 3.1
 * ASP.NET Core MVC
 * [ManoTranslator](https://github.com/para7/ManoTranslator)
 
